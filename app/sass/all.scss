@@ -11,7 +11,7 @@ p{
 	padding-bottom: 24px;
 }
 h1,.title{
-	font:43px/44px Georgia, Georgia, serif;
+	font:43px/44px Georgia, Georgia, serif !important;
 	margin: 0;
 	color: #284eb0;
 	padding-bottom: 24px;
@@ -32,6 +32,9 @@ h1,.title{
 
 #main{
 	padding: 40px 0;
+	@media (max-width: 960px){
+		padding-bottom: 0;
+	}
 }
 .holder-list-post{
 	margin: 0 -15px;
@@ -95,7 +98,57 @@ h1,.title{
 	.sidebar{
 		width: 33.33%;
 		padding: 0 15px 30px;
-
+		.banner{
+			padding-top: 50px;
+			text-align: center;
+			img{
+				max-width: 100% !important;
+				width: auto !important;
+				display: inline-block;
+			}
+		}
+		.popular{
+			@media (max-width: 550px){
+				padding-top: 20px;
+			}
+			h2{
+				text-align: left;
+				padding-bottom: 30px;
+				@media (max-width: 960px){
+					text-align: center;
+				}
+			}
+			.holder-carousel,.holder-popular{
+				padding: 0;
+				font-size: 0;
+			}
+			.holder-popular{
+				@media (max-width: 960px){
+					margin: 0 -10px;
+					@media (max-width: 600px){
+						margin: 0 !important;
+					}
+				}
+			}
+			.item{
+				padding-bottom: 30px;
+				@media (max-width: 960px){
+					width: 33.33%;
+					display: inline-block;
+					vertical-align: top;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				@media (max-width: 600px){
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+					width: 100% !important;
+				}
+				strong{
+					padding-top: 10px;
+				}
+			}
+		}
 	}
 }
 .btn-mob-tags{
@@ -609,4 +662,159 @@ h1,.title{
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span{
 	background:#efcbd3 !important;
+}
+// inner
+.post-content{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	display: block !important;
+	padding-bottom: 30px !important;
+	width: 100% !important;
+	h2{
+		color: #284eb0;
+	}
+	h1,h2,h3{
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+	}
+	.title{
+		font:43px/44px Georgia, Georgia, serif !important;
+		@media (max-width: 550px){
+			font-size: 35px !important;
+			line-height: 40px !important;
+		}
+	}
+	.data-post{
+		padding-top: 30px !important;
+		padding-bottom: 17px !important;
+	}
+	p{
+		font: 17px/24px 'Roboto', sans-serif !important;
+		a{
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		strong{
+			color: #284eb0;
+		}
+	}
+	img{
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+	h2{
+		margin: 0;
+		font-size: 24px;
+		line-height: 30px;
+		color: #000;
+		padding: 20px 0;
+	}
+	ul{
+		margin: 0;
+		padding: 10px 0;
+		list-style: none;
+		strong{
+			color: #284eb0;
+		}
+		li{
+			padding-left: 20px;
+			position: relative;
+			font-size: 17px;
+			line-height: 24px;
+			padding-bottom: 15px;
+			&:before{
+				content: '';
+				width: 9px;
+				height: 9px;
+				border-radius: 50%;
+				background: #e5cad2;
+				display: block;
+				position: absolute;
+				top: 8px;
+				left: 0;
+			}
+		}
+	}
+}
+.soc-in-post{
+	border-radius: 20px;
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding: 0 15px;
+	box-shadow: 0 5px 21px 0px rgba(#0f1111,.2);
+	span,.soc,.soc img{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	span,.soc{
+		padding: 11px 18px;
+	}
+	span{
+		color: #284eb0;
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+.form-2{
+	margin-top: 53px;
+	background: #f7f7f7;
+	padding: 33px 54px 20px;
+	margin-bottom: 50px;
+	@media (max-width: 800px){
+		padding: 33px 15px 20px;
+	}
+	h3{
+		text-align: center;
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 23px;
+		margin: 0;
+		padding-bottom: 27px;
+	}
+	.row{
+		display: flex;
+		flex-flow:row nowrap;
+		align-items:flex-end;
+		width: 100%;
+		@media (max-width: 960px){
+			.button{
+				width: 100% !important;
+			}
+		}
+		@media (max-width: 560px){
+			display: block !important;
+			text-align: center;
+			label{
+				text-align: left;
+			}
+			.button{
+				width: auto !important;
+			}
+		}
+	}
+	label{
+		display: block;
+		color: #b1b6be;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 0 0 8px 3px;
+	}
+	.column{
+		padding: 0 7px 20px;
+		flex-grow:1;
+	}
+	input{
+		margin: 0;
+		padding: 0 15px;
+		border: 0;
+		height: 35px;
+		border-radius: 15px;
+		width: 100%;
+		outline: none;
+	}
 }

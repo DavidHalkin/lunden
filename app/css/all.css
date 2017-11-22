@@ -782,7 +782,7 @@ p {
 }
 
 h1, .title {
-  font: 43px/44px Georgia, Georgia, serif;
+  font: 43px/44px Georgia, Georgia, serif !important;
   margin: 0;
   color: #284eb0;
   padding-bottom: 24px;
@@ -806,6 +806,12 @@ h1 a, .title a {
 
 #main {
   padding: 40px 0;
+}
+
+@media (max-width: 960px) {
+  #main {
+    padding-bottom: 0;
+  }
 }
 
 .holder-list-post {
@@ -912,6 +918,77 @@ h1 a, .title a {
 .container .sidebar {
   width: 33.33%;
   padding: 0 15px 30px;
+}
+
+.container .sidebar .banner {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container .sidebar .banner img {
+  max-width: 100% !important;
+  width: auto !important;
+  display: inline-block;
+}
+
+@media (max-width: 550px) {
+  .container .sidebar .popular {
+    padding-top: 20px;
+  }
+}
+
+.container .sidebar .popular h2 {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 960px) {
+  .container .sidebar .popular h2 {
+    text-align: center;
+  }
+}
+
+.container .sidebar .popular .holder-carousel, .container .sidebar .popular .holder-popular {
+  padding: 0;
+  font-size: 0;
+}
+
+@media (max-width: 960px) {
+  .container .sidebar .popular .holder-popular {
+    margin: 0 -10px;
+  }
+}
+
+@media (max-width: 960px) and (max-width: 600px) {
+  .container .sidebar .popular .holder-popular {
+    margin: 0 !important;
+  }
+}
+
+.container .sidebar .popular .item {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 960px) {
+  .container .sidebar .popular .item {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .sidebar .popular .item {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+}
+
+.container .sidebar .popular .item strong {
+  padding-top: 10px;
 }
 
 .btn-mob-tags {
@@ -1561,4 +1638,210 @@ h1 a, .title a {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #efcbd3 !important;
+}
+
+.post-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: block !important;
+  padding-bottom: 30px !important;
+  width: 100% !important;
+}
+
+.post-content h2 {
+  color: #284eb0;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.post-content .title {
+  font: 43px/44px Georgia, Georgia, serif !important;
+}
+
+@media (max-width: 550px) {
+  .post-content .title {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+}
+
+.post-content .data-post {
+  padding-top: 30px !important;
+  padding-bottom: 17px !important;
+}
+
+.post-content p {
+  font: 17px/24px 'Roboto', sans-serif !important;
+}
+
+.post-content p a {
+  text-decoration: underline;
+}
+
+.post-content p a:hover {
+  text-decoration: none;
+}
+
+.post-content p strong {
+  color: #284eb0;
+}
+
+.post-content img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.post-content h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  padding: 20px 0;
+}
+
+.post-content ul {
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.post-content ul strong {
+  color: #284eb0;
+}
+
+.post-content ul li {
+  padding-left: 20px;
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  padding-bottom: 15px;
+}
+
+.post-content ul li:before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #e5cad2;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.soc-in-post {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  -webkit-box-shadow: 0 5px 21px 0px rgba(15, 17, 17, 0.2);
+          box-shadow: 0 5px 21px 0px rgba(15, 17, 17, 0.2);
+}
+
+.soc-in-post span, .soc-in-post .soc, .soc-in-post .soc img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.soc-in-post span, .soc-in-post .soc {
+  padding: 11px 18px;
+}
+
+.soc-in-post span {
+  color: #284eb0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.form-2 {
+  margin-top: 53px;
+  background: #f7f7f7;
+  padding: 33px 54px 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+  .form-2 {
+    padding: 33px 15px 20px;
+  }
+}
+
+.form-2 h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 23px;
+  margin: 0;
+  padding-bottom: 27px;
+}
+
+.form-2 .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .form-2 .row .button {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .form-2 .row {
+    display: block !important;
+    text-align: center;
+  }
+  .form-2 .row label {
+    text-align: left;
+  }
+  .form-2 .row .button {
+    width: auto !important;
+  }
+}
+
+.form-2 label {
+  display: block;
+  color: #b1b6be;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 0 8px 3px;
+}
+
+.form-2 .column {
+  padding: 0 7px 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.form-2 input {
+  margin: 0;
+  padding: 0 15px;
+  border: 0;
+  height: 35px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  width: 100%;
+  outline: none;
 }

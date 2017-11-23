@@ -11,12 +11,19 @@
 		}
 	}
 	.h-bottom{
-		img{
+		height: 321px;
+		background: url(../images/blog.jpg) no-repeat 50% 0;
+		a{
 			display: block;
-			height: auto;
-			max-width: 100%;
-			margin: 0 auto;
+			height: 100%;
+			width: 100%;
 		}
+		// img{
+		// 	display: block;
+		// 	height: auto;
+		// 	max-width: 100%;
+		// 	margin: 0 auto;
+		// }
 	}
 }
 .btn-mob-nav{

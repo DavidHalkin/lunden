@@ -782,7 +782,7 @@ p {
 }
 
 h1, .title {
-  font: 43px/44px Georgia, Georgia, serif !important;
+  font: 43px/44px Georgia, Georgia, serif;
   margin: 0;
   color: #284eb0;
   padding-bottom: 24px;

@@ -831,7 +831,7 @@ h1 a, .title a {
   width: 50%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 730px) {
+@media (max-width: 730px) {
   .holder-list-post.in-top .post {
     width: 100% !important;
   }
@@ -1441,6 +1441,12 @@ h1 a, .title a {
   text-align: center;
   font-size: 0;
   padding-top: 20px;
+}
+
+@media (max-width: 960px) {
+  .nav-links {
+    padding-bottom: 30px;
+  }
 }
 
 .nav-links .meta-nav {

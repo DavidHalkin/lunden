@@ -43,7 +43,7 @@ h1,.title{
 	&.in-top{
 		.post{
 			width: 50%;
-			@media screen and (min-width: 320px) and (max-width: 730px){
+			@media (max-width: 730px){
 				width: 100% !important;
 			}
 			.footer-post{
@@ -502,6 +502,9 @@ h1,.title{
 	text-align: center;
 	font-size: 0;
 	padding-top: 20px;
+	@media (max-width: 960px){
+		padding-bottom: 30px;
+	}
 	.meta-nav{
 		display: none;
 	}

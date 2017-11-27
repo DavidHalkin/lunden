@@ -92,6 +92,20 @@ article, aside, audio, canvas, datalist, details, figcaption, figure, footer, he
   background: url(../images/blog.jpg) no-repeat 50% 0;
 }
 
+@media (max-width: 1010px) {
+  #header .h-bottom {
+    background: url(../images/blog-mob.jpg) no-repeat 0 0 !important;
+  }
+}
+
+@media (max-width: 580px) {
+  #header .h-bottom {
+    height: 200px !important;
+    -webkit-background-size: auto 100%  !important;
+            background-size: auto 100%  !important;
+  }
+}
+
 #header .h-bottom a {
   display: block;
   height: 100%;
@@ -1023,47 +1037,6 @@ h1 a, .title a {
   padding-top: 10px;
 }
 
-.btn-mob-tags {
-  display: block;
-  width: 40px;
-  height: 39px;
-  border: 1px solid #467be4;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  margin-left: 10px;
-  padding: 8px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
-@media (min-width: 961px) {
-  .btn-mob-tags {
-    display: none;
-  }
-}
-
-.btn-mob-tags.active {
-  border-color: #efcbd3;
-}
-
-.btn-mob-tags.active span {
-  background: #efcbd3;
-}
-
-.btn-mob-tags span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  background: #467be4;
-}
-
-.btn-mob-tags span + span {
-  margin-top: 6px;
-}
-
 .tags {
   margin-top: -24px;
   margin-left: -15px;
@@ -1092,9 +1065,15 @@ h1 a, .title a {
 @media (max-width: 960px) {
   .tags {
     display: block;
-    padding: 10px;
     -webkit-border-radius: 15px;
             border-radius: 15px;
+    text-align: center;
+  }
+  .tags ul li {
+    padding: 0 10px !important;
+  }
+  .tags ul li:before {
+    content: none !important;
   }
 }
 
@@ -1148,37 +1127,6 @@ h1 a, .title a {
 .tags ul li a:hover {
   text-decoration: none;
   color: #efcbd3;
-}
-
-@media (max-width: 960px) {
-  .tags ul {
-    display: none;
-    text-align: left;
-    padding: 0;
-    border-top: 1px solid #efcbd3;
-    margin-top: 10px;
-  }
-  .tags ul li {
-    display: block !important;
-    padding: 0 !important;
-  }
-  .tags ul li:before {
-    content: none !important;
-  }
-  .tags ul li a {
-    padding: 10px;
-    font-size: 18px !important;
-    line-height: 20px !important;
-  }
-  .tags ul li a:hover {
-    color: #fff !important;
-    background: #efcbd3;
-    text-decoration: none;
-  }
-  .tags ul li.active a {
-    background: #efcbd3 !important;
-    color: #fff !important;
-  }
 }
 
 .button {

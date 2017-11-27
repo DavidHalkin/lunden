@@ -13,17 +13,19 @@
 	.h-bottom{
 		height: 321px;
 		background: url(../images/blog.jpg) no-repeat 50% 0;
+		@media (max-width: 1010px){
+			background: url(../images/blog-mob.jpg) no-repeat 0 0 !important;
+			
+		}
+		@media (max-width: 580px){
+			height: 200px !important;
+			background-size: auto 100%  !important;
+		}
 		a{
 			display: block;
 			height: 100%;
 			width: 100%;
 		}
-		// img{
-		// 	display: block;
-		// 	height: auto;
-		// 	max-width: 100%;
-		// 	margin: 0 auto;
-		// }
 	}
 }
 .btn-mob-nav{

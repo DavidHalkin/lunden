@@ -5,8 +5,8 @@ $(document).ready(function(){
         $(this).toggleClass("active");
     });
     // tags
-     $(".btn-mob-tags").click(function(){
-        $("#tags-nav").slideToggle("fast");
-        $(this).toggleClass("active");
-    });
+    //  $(".btn-mob-tags").click(function(){
+    //     $("#tags-nav").slideToggle("fast");
+    //     $(this).toggleClass("active");
+    // });
 });

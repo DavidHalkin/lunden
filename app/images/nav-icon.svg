@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.36 92.3">
+    <defs>
+        <style>.cls-1{fill:#efcbd3;}.cls-2{fill:none;stroke:#efcbd3;stroke-miterlimit:10;stroke-width:14.33px;}</style>
+    </defs>
+    <title>Ресурс 2</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Layer_1" data-name="Layer 1">
+            <circle class="cls-1" cx="10.06" cy="46.15" r="10.06"/>
+            <circle class="cls-1" cx="10.06" cy="82.24" r="10.06"/>
+            <circle class="cls-1" cx="10.06" cy="10.06" r="10.06"/>
+            <line class="cls-2" x1="33.86" y1="10.06" x2="98.36" y2="10.06"/>
+            <line class="cls-2" x1="33.86" y1="46.15" x2="98.36" y2="46.15"/>
+            <line class="cls-2" x1="33.86" y1="82.24" x2="98.36" y2="82.24"/>
+        </g>
+    </g>
+</svg>

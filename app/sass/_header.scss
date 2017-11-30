@@ -369,7 +369,7 @@
 // 	}
 // }
         /* HEADER */
-@import 'http://tester.lundenilona.ru/sites/all/modules/nice_menus/css/nice_menus_default.css';
+// @import 'http://tester.lundenilona.ru/sites/all/modules/nice_menus/css/nice_menus_default.css';
 #header-top {
     font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -625,12 +625,14 @@ header {
     /* MAIN MENU */
 #block-nice-menus-1 {
     float: left;
+
     .content{
     	// width: 100%;
     	// overflow: hidden;
     	float: left;
     }
 }
+#nice-menu-1{list-style: none;}
 #nice-menu-1 a {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -648,6 +650,7 @@ header {
     background-image: none;
     position: static;
     padding-bottom: 0;
+    float: left;
     // position: relative;
 } 
 #nice-menu-1 > li > a {
@@ -828,6 +831,9 @@ header {
     -moz-transition: all 0.45s ease-in-out;
     -ms-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out; }
+    .block-nice-menus li{
+    	float: none !important;
+    }
 #block-nice-menus-1 .content{
 	float: none;
 }
